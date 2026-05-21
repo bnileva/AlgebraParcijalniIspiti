@@ -1,0 +1,15 @@
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\bin\Debug\net9.0\Ispit.Konzola.exe
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\bin\Debug\net9.0\Ispit.Konzola.deps.json
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\bin\Debug\net9.0\Ispit.Konzola.runtimeconfig.json
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\bin\Debug\net9.0\Ispit.Konzola.dll
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\bin\Debug\net9.0\Ispit.Konzola.pdb
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.GeneratedMSBuildEditorConfig.editorconfig
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.AssemblyInfoInputs.cache
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.AssemblyInfo.cs
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.csproj.CoreCompileInputs.cache
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.sourcelink.json
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.dll
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\refint\Ispit.Konzola.dll
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.pdb
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\Ispit.Konzola.genruntimeconfig.cache
+E:\Algebra\Projekti\AlgebraParcijalniIspiti\AlgebraParcijalniIspit3\obj\Debug\net9.0\ref\Ispit.Konzola.dll
