@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ispit.Model.Klase
 {
-    internal class Banka
+    internal class Klijent
     {
-        public string? Simbol { get; set; }
-        public string? Naziv { get; set; }
+        public string? ImePrezime { get; set; }
+        public double Stanje { get; set; }
+        public string? Banka { get; set; }
     }
 }

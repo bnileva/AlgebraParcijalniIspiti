@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ispit.Model.Klase
 {
-    internal class Banka
+    internal class GrupiraniMilijunasi
     {
-        public string? Simbol { get; set; }
-        public string? Naziv { get; set; }
+        public string? Banka { get; set; }
+        public IEnumerable<string>? Milijunasi{ get; set; }
     }
 }
