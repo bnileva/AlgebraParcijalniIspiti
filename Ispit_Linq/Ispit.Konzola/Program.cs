@@ -17,8 +17,8 @@ internal class Program
                 Milijunasi = Podaci.ListaKlijenata
                     .Where(b => b.Banka == k.Simbol)
                     .Where(k => k.Stanje > 1000000).Select(k => k.ImePrezime)
-            }).ToList();
-
+            })
+            .ToList();
 
         foreach (var g in GrupirajPremaBanci)
         {
@@ -26,10 +26,12 @@ internal class Program
 
             foreach(var m in g.Milijunasi)
             {
-                Console.Write($"{m}\n");
+                Console.Write($"{m}, ");
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
         }
+
+
 
         var IzvjestajMilijunasa = Podaci.ListaKlijenata.Join(
             Podaci.ListaBanki,
@@ -40,8 +42,7 @@ internal class Program
                 ImeIPrezime = k.ImePrezime,
                 Stanje = k.Stanje,
                 NazivBanke = b.Naziv
-            }
-        )
+            })
             .Where(k => k.Stanje > 1000000)
             .ToList();
 
