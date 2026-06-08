@@ -4,7 +4,7 @@ namespace Ispit.Model
 {
     public class Podaci
     {
-        List<Banka> ListaBanki = new()
+        public static List<Banka> ListaBanki = new()
         {
             new Banka {Simbol = "DALI", Naziv = "Dalić banka" },
             new Banka() {Simbol = "MODRI", Naziv = "Modrić banka"},
@@ -12,7 +12,7 @@ namespace Ispit.Model
             new Banka() {Simbol = "ŠUKER", Naziv = "Šuker banka"}
         };
 
-        List<Klijent> ListaKlijenata = new()
+        public static List<Klijent> ListaKlijenata = new()
         {
             new Klijent {ImePrezime = "Zvonimir Boban", Banka = "ŠUKER", Stanje = 500000},
             new Klijent {ImePrezime = "Davor Šuker", Banka = "ŠUKER", Stanje = 9000000},

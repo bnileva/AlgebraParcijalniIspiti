@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ispit.Model.Klase
 {
-    internal class Klijent
+    public class Klijent
     {
         public string? ImePrezime { get; set; }
         public double Stanje { get; set; }

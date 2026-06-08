@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ispit.Model.Klase
 {
-    internal class Banka
+    public class Banka
     {
         public string? Simbol { get; set; }
         public string? Naziv { get; set; }
