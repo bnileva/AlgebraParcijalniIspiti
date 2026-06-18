@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Book>
+
+@{
+    ViewData["Title"] = "Exam";
+    var knjige = Model.ToList().OrderBy(b => b.Title);
+}
+<table>
+    <thead>
+    <tr>
+        <th>Book Title</th>
+        <th>Book Publish Year</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Birth Year</th>
+    </tr>
+
+    @foreach (var item in knjige)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+            <td>@Html.DisplayFor(modelItem => item.PublishYear)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author.Surname)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author.BirthYear)</td>
+        </tr>
+    }
+</table>
