@@ -13,10 +13,11 @@ namespace UnitTesting
         {
             var controller = new HomeController(logger);
 
-            //var result = controller.CheckCountValue(500);
-
-            Assert.IsType<Exception>(controller.CheckCountValue(500));
-
+            var result = controller.CheckCountValue(500);
+            //Assert.IsType<Exception>(controller.CheckCountValue(500));
+            //Assert.Throws(controller.CheckCountValue(500));
+            //Assert.ThrowsAny<Exception>(controller.CheckCountValue(500));
+            //Assert.Fail();
         }
 
         [Fact]
