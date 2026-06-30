@@ -34,7 +34,7 @@ namespace aspnet_core_unit_1A.Controllers
                 throw (new Exception("Broj je izvan raspona"));
             }
 
-            return View();
+            return View(i);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
