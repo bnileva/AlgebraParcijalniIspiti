@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="aspnet_core_unit_1A/aspnet_core_unit_1A.csproj" />
+  <Project Path="UnitTesting/UnitTesting.csproj" Id="939beb21-f153-446f-9ac5-7a69ad7bae3d" />
 </Solution>

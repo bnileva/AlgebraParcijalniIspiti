@@ -1,3 +1,5 @@
+using aspnet_core_unit_1A.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
