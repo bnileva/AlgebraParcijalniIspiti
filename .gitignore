@@ -56,3 +56,4 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /.vs
+/AspNet.TODO/.vs/AspNet.TODO.slnx
