@@ -57,3 +57,4 @@ TestResult.xml
 nunit-*.xml
 /.vs
 /EF_CodeFirst/.vs/EF_CodeFirst.slnx
+/EF_CodeFirst/.vs/EF_CodeFirst/CopilotIndices/18.5.39150.21849
