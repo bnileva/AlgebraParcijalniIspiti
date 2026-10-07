@@ -12,27 +12,20 @@ namespace Ispit.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ShoppingItemsController : ControllerBase
+    public class ShoppingItemsController(AppDbContext context) : ControllerBase
     {
-        private readonly AppDbContext _context;
-
-        public ShoppingItemsController(AppDbContext context)
-        {
-            _context = context;
-        }
-
         // GET: api/ShoppingItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ShoppingItem>>> GetShoppingItems()
         {
-            return await _context.ShoppingItems.ToListAsync();
+            return await context.ShoppingItems.ToListAsync();
         }
 
         // GET: api/ShoppingItems/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ShoppingItem>> GetShoppingItem(int id)
         {
-            var shoppingItem = await _context.ShoppingItems.FindAsync(id);
+            var shoppingItem = await context.ShoppingItems.FindAsync(id);
 
             if (shoppingItem == null)
             {
@@ -52,11 +45,11 @@ namespace Ispit.API.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(shoppingItem).State = EntityState.Modified;
+            context.Entry(shoppingItem).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -78,8 +71,8 @@ namespace Ispit.API.Controllers
         [HttpPost]
         public async Task<ActionResult<ShoppingItem>> PostShoppingItem(ShoppingItem shoppingItem)
         {
-            _context.ShoppingItems.Add(shoppingItem);
-            await _context.SaveChangesAsync();
+            context.ShoppingItems.Add(shoppingItem);
+            await context.SaveChangesAsync();
 
             return CreatedAtAction("GetShoppingItem", new { id = shoppingItem.Id }, shoppingItem);
         }
@@ -88,21 +81,21 @@ namespace Ispit.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteShoppingItem(int id)
         {
-            var shoppingItem = await _context.ShoppingItems.FindAsync(id);
+            var shoppingItem = await context.ShoppingItems.FindAsync(id);
             if (shoppingItem == null)
             {
                 return NotFound();
             }
 
-            _context.ShoppingItems.Remove(shoppingItem);
-            await _context.SaveChangesAsync();
+            context.ShoppingItems.Remove(shoppingItem);
+            await context.SaveChangesAsync();
 
             return NoContent();
         }
 
         private bool ShoppingItemExists(int id)
         {
-            return _context.ShoppingItems.Any(e => e.Id == id);
+            return context.ShoppingItems.Any(e => e.Id == id);
         }
     }
 }

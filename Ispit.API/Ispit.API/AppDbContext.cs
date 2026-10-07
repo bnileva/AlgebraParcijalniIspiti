@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=.;Database=ShoppingItemsDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=.;Database=ShoppingItemsDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true");
 
         base.OnConfiguring(optionsBuilder);
     }
